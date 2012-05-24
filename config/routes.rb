@@ -6,7 +6,7 @@ SampleApp::Application.routes.draw do
   
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
-  match '/signout', to: 'sessions#destroy'  
+  match '/signout', to: 'sessions#destroy'
 
   match '/help',    to: 'static_pages#help' #gives the help_path automatically
   match '/contact', to: 'static_pages#contact'
