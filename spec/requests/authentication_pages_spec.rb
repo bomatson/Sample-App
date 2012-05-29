@@ -98,7 +98,7 @@ describe "Authentication" do
           it {should have_selector('title', text: 'Sign in')}
         end
       end
-  end
+    end
     
     describe "as wrong user" do
       let(:user) {FactoryGirl.create(:user)}
@@ -129,5 +129,6 @@ describe "Authentication" do
       end
     
     end
+  
   end
 end
